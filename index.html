@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .text-gradient {
+            background: linear-gradient(to right, #1b1b1b, #777676);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header class="bg-[#eae9e8] p-20 rounded-b-[100px]">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-[#f1f0ef] flex justify-between items-center w-[300px] rounded-[40px]">
+                    <p class="ps-5 text-sm">husem.dev@gmail.com</p>
+                    <button class="py-2 px-8 rounded-[30px] bg-white border-4 border-[#f1f0ef] opacity-100 hover:opacity-50 transition-all duration-300">Copy</button>
+                </div>
+                <button class="py-2 px-8 rounded-[30px] bg-white border-4 border-[#f1f0ef] opacity-100 hover:opacity-50 transition-all duration-300 ms-3">CV</button>
+            </div>
+            <ul class="flex items-center">
+                <li><a href="#" class="block mx-2 opacity-100 hover:opacity-50 transition-all duration-300">Linkedin</a></li>
+                <li><span class="opacity-50">/</span></li>
+                <li><a href="#" class="block mx-2 opacity-100 hover:opacity-50 transition-all duration-300">Dribbble</a></li>
+                <li><span class="opacity-50">/</span></li>
+                <li><a href="#" class="block mx-2 opacity-100 hover:opacity-50 transition-all duration-300">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-col items-center mt-20">
+            <div id="avatar" class="relative mb-10">
+                <div class="rounded-full w-[160px] h-[160px] bg-white flex justify-center items-center">
+                    <img src="images/boy.png" alt="Me" class="bg-[#eae9e8] rounded-full w-[150px]">
+                </div>
+                <p class="absolute bg-white px-5 py-2 rounded-full text-sm right-[-65%] top-[50%] translate-y-[-50%] -rotate-12">Hüsem K. 👋🏻</p>
+            </div>
+            <h1 class="text-[60px] max-w-[600px] text-center leading-[70px] font-bold text-gradient">Building digital products, brands and experience.</h1>
+            <a href="#" class="block text-center py-6 px-16 text-sm bg-[#242424] rounded-full text-white mt-10 opacity-100 hover:opacity-75 transition-all duration-300">Latest Shots</a>
+        </div>
+    </header>
+</main>
+</body>
+</html>
