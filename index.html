@@ -5,17 +5,12 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .text-gradient {
-            background: linear-gradient(to right, #1b1b1b, #777676);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 <main>
-    <header class="bg-[#eae9e8] p-20 rounded-b-[100px]">
+    <header class="bg-[#eae9e8] p-20 rounded-b-[100px] relative z-20">
         <div class="flex justify-between items-center">
             <div class="flex items-center">
                 <div class="bg-[#f1f0ef] flex justify-between items-center w-[300px] rounded-[40px]">
@@ -43,6 +38,103 @@
             <a href="#" class="block text-center py-6 px-16 text-sm bg-[#242424] rounded-full text-white mt-10 opacity-100 hover:opacity-75 transition-all duration-300">Latest Shots</a>
         </div>
     </header>
+
+    <section class="py-24 px-20 rounded-b-[100px] z-10 relative bg-white">
+        <span class="absolute left-0 right-0 top-[-100px] w-full bg-white h-[100px] pb-5">
+            <span class="bg-[#eae9e8] w-full p-[100px] block rounded-b-[100px]"></span>
+        </span>
+        <div class="w-full h-full mySwiper overflow-hidden mt-20">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/logos/html-logo.png" alt="Html Logo"><span class="tooltip text-gradient">Html</span></div>
+                <div class="swiper-slide"><img src="images/logos/css-logo.png" alt="Css Logo"><span class="tooltip text-gradient">Css</span></div>
+                <div class="swiper-slide"><img src="images/logos/js-logo.png" alt="Javascript Logo"><span class="tooltip text-gradient">Javascript</span></div>
+                <div class="swiper-slide"><img src="images/logos/bootstrap-logo.png" alt="Bootstrap Logo"><span class="tooltip text-gradient">Bootstrap</span></div>
+                <div class="swiper-slide"><img src="images/logos/tailwind-logo.png" alt="Tailwind Logo"><span class="tooltip text-gradient">Tailwind</span></div>
+                <div class="swiper-slide"><img src="images/logos/php-logo.png" alt="Php Logo"><span class="tooltip text-gradient">Php</span></div>
+                <div class="swiper-slide"><img src="images/logos/nodejs-logo.png" alt="NodeJs Logo"><span class="tooltip text-gradient">NodeJs</span></div>
+                <div class="swiper-slide"><img src="images/logos/reactjs-logo.png" alt="React Logo"><span class="tooltip text-gradient">React</span></div>
+                <div class="swiper-slide"><img src="images/logos/nextjs-logo.png" alt="NextJs Logo"><span class="tooltip text-gradient">NextJs</span></div>
+                <div class="swiper-slide"><img src="images/logos/mongodb-logo.png" alt="MongoDB Logo"><span class="tooltip text-gradient">MongoDB</span></div>
+                <div class="swiper-slide"><img src="images/logos/mysql-logo.png" alt="Mysql Logo"><span class="tooltip text-gradient">Mysql</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-52 px-5 bg-[#eae9e8] relative top-[-100px] z-[1] flex flex-col items-center">
+        <h2 class="text-[35px] max-w-[700px] text-center leading-[60px] font-bold text-gradient">Collaborate with brands and agencies to create impactful results.</h2>
+        <div class="relative w-3/4 mt-20">
+            <div class="w-full h-[1px] bg-gray-300 flex justify-center items-center">
+                <span class="block bg-white w-fit px-6 py-2 rounded-full text-sm -rotate-12">Services</span>
+            </div>
+            <div class="grid grid-cols-4 gap-8 mt-16">
+                <div class="mx-auto p-5 rounded-xl border border-transparent hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+                    <img src="images/services/front-development.png" alt="UI & UX" class="w-[40px]">
+                    <p class="font-bold mt-5 text-gray-600">UI & UX</p>
+                    <p class="w-[200px] text-gray-600">Designing interfaces that are intuitive, efficient and enjoyable to use.</p>
+                </div>
+                <div class="mx-auto p-5 rounded-xl border border-transparent hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+                    <img src="images/services/ux.png" alt="Web & Mobile App" class="w-[40px]">
+                    <p class="font-bold mt-5 text-gray-600">Web & Mobile App</p>
+                    <p class="w-[200px] text-gray-600">Transforming ideas into exceptional web and mobile app experiences.</p>
+                </div>
+                <div class="mx-auto p-5 rounded-xl border border-transparent hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+                    <img src="images/services/mockup.png" alt="Design & Creative" class="w-[40px]">
+                    <p class="font-bold mt-5 text-gray-600">Design & Creative</p>
+                    <p class="w-[200px] text-gray-600">Crafting visually stunning designs that connect with your audience.</p>
+                </div>
+                <div class="mx-auto p-5 rounded-xl border border-transparent hover:border-gray-300 hover:cursor-pointer transition-all duration-300">
+                    <img src="images/services/code.png" alt="Development" class="w-[40px]">
+                    <p class="font-bold mt-5 text-gray-600">Development</p>
+                    <p class="w-[200px] text-gray-600">Bringing your vision to life with the latest technology and design trends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-24 px-5 rounded-t-[100px] relative z-10 bg-white flex flex-col items-center">
+        <div class="w-[130px] h-[130px] p-5 border border-gray-200 rounded-full">
+            <img src="images/hand-shake.png" alt="hand" class="w-full opacity-40">
+        </div>
+        <p class="text-gradient text-[60px] max-w-[700px] text-center font-bold">Tell me about your next project</p>
+        <div class="flex items-center mt-10">
+            <a href="#" class="block text-center py-6 px-16 text-sm bg-[#242424] rounded-full text-white opacity-100 hover:opacity-75 transition-all duration-300">Email Me</a>
+            <button class="py-6 px-16 rounded-full text-sm bg-white border-4 border-[#f1f0ef] opacity-100 hover:opacity-50 transition-all duration-300 ms-3">Whatsapp</button>
+        </div>
+        <div class="w-[calc(100%-150px)] h-[1px] bg-gray-300 mt-20"></div>
+        <div class="flex justify-between text-sm w-[calc(100%-150px)] mt-6">
+            <p>©2024 All rights reserved.</p>
+            <ul class="flex items-center">
+                <li><a href="#" class="block mx-2 opacity-100 hover:opacity-50 transition-all duration-300">Linkedin</a></li>
+                <li><span class="opacity-50">/</span></li>
+                <li><a href="#" class="block mx-2 opacity-100 hover:opacity-50 transition-all duration-300">Dribbble</a></li>
+                <li><span class="opacity-50">/</span></li>
+                <li><a href="#" class="block mx-2 opacity-100 hover:opacity-50 transition-all duration-300">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
 </main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
+        speed: 3000,
+    });
+    $('.swiper-slide').on('mouseenter', function () {
+        swiper.autoplay.stop();
+    });
+
+    $('.swiper-slide').on('mouseleave', function () {
+        swiper.autoplay.start();
+    });
+
+</script>
 </body>
 </html>
